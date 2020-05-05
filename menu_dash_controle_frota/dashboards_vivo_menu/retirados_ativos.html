@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard - Retirados e Ativos</title>
+
+    <!-- Semantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.2/dist/semantic.min.js"></script>
+
+     <!-- Estilos para os gráficos -->   
+   <link rel="stylesheet" type="text/css" href="./helper/crossfilterjs/css/dc.css" />
+
+   <!-- Estilo para a página -->
+   <link rel="stylesheet" type="text/css" href="./frota_momento_atual/css/style.css" />
+   <link rel="stylesheet" href="./frota_momento_atual/css/style_sprite_vivo.css">
+   <link rel="stylesheet" type="text/css" href="./frota_momento_atual/css/font_face.css" />
+
+   <!-- Bibliotecas js para manipulação de dados e gráficos -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+   <script type="text/javascript" src="./helper/crossfilterjs/js/crossfilter.js"></script>
+   <script type="text/javascript" src="./helper/crossfilterjs/js/dc.js"></script>    
+
+   <!-- Scripts para impressão -->
+   <script src="./helper/printjs/js/printjs.js"></script>
+   <link rel="stylesheet" href="./helper/printjs/css/printjs.css">
+
+   <!-- Moment.JS -->
+   <script type="text/javascript" src="./helper/momentJS/moment.js"></script>    
+
+
+   <script src="https://d3js.org/d3-time.v1.min.js"></script>
+<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+    <style>        
+        .eight.column{
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-direction: column !important;
+        }
+        div.dc-html-legend .dc-legend-item-color {    
+            border-radius: 50%;
+        }
+
+        h3.ui.header{
+            align-self: baseline;
+        }
+ 
+        h1.ui.header {            
+            letter-spacing: 1;
+            word-spacing: 2px;
+        }
+        .dot{
+            width: 10px;
+            height: 10px;
+        }
+        .table-container{
+            max-height: 360px;
+            overflow: auto;
+        }
+        
+        
+       
+    </style>
+</head>
+
+<body>
+    <div class="ui container  mt-10" id="page">
+        <div class="ui grid centered mb-50 mt-10 stackable">
+            <div class="sixteen wide computer column" id="stackedarea">
+                <div class="ui one cards">
+                    <div class="ui card">
+                        <div class="content">
+                            <h1 class="ui header">COMPARATIVO FLUTUAÇÃO DO TAMANHO DA FROTA</h1>
+                        </div>
+                        <div class="content">
+                            <div id="test">                                
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <div id="legend-retirado-area" class="dc-html-legend-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixteen wide computer column">
+                <div class="ui two cards stackable">
+                    <div class="ui card">
+                        <div class="content">
+                            <h1 class="ui header">TAMANHO DA FROTA POR GRUPO E CATEGORIA</h1>
+                        </div>
+                        <div class="content">
+                            <div id="chart-stacked-group">
+                            
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <div id="legend-stackedBar" class="dc-html-legend-container"></div>
+                        </div>
+                    </div>               
+                    <div class="ui card">
+                        <div class="content">
+                            <h1 class="ui header">RELAÇÃO DE PLACAS</h1>
+                        </div>
+                        <div class="content">
+                            <div class="table-container">
+                                <table class="ui table striped celled" id="table"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="./dash_retirados_ativos/js/gerarGraficos.js"></script>    
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+[
+    {        
+        "grupo": "Grupo Teste C",        
+        "placa": "fgr1646",
+        "status": "ON",
+        "dataHoraUltimaPosicao": "12/10/2000 20:10:03",
+        "categoria": "Leve",
+        "total": "VIVO"
+    },
+    {        
+        "grupo": "Grupo Teste A",        
+        "placa": "fgr0901",
+        "status": "OFF",
+        "dataHoraUltimaPosicao": "12/10/2000 22:10:03",
+        "categoria": "Pesado",
+        "total": "VIVO"
+    },
+    {        
+        "grupo": "Grupo Teste A",        
+        "placa": "fgr9899",
+        "status": "OFF",
+        "dataHoraUltimaPosicao": "12/10/2000 21:10:03",
+        "categoria": "Leve",
+        "total": "VIVO"
+    },
+    {        
+        "grupo": "Grupo Teste C",        
+        "placa": "fgr1113",
+        "status": "OFF",
+        "dataHoraUltimaPosicao": "13/10/2000 20:10:03",
+        "categoria": "Medio",
+        "total": "VIVO"
+    },
+    {        
+        "grupo": "Grupo Teste A",
+        "placa": "fgr0900",
+        "status": "ON",
+        "dataHoraUltimaPosicao": "13/10/2000 23:10:03",
+        "categoria": "Leve",
+        "total": "VIVO"
+    },
+    {        
+        "grupo": "Grupo Teste B",
+        "placa": "fgr1234",
+        "status": "ON",
+        "dataHoraUltimaPosicao": "16/10/2000 20:10:03",
+        "categoria": "Medio",
+        "total": "VIVO"
+    },
+    {        
+        "grupo": "Grupo Teste B",
+        "placa": "fgr3211",
+        "status": "ON",
+        "dataHoraUltimaPosicao": "15/10/2000 21:10:03",
+        "categoria": "Medio",
+        "total": "VIVO"
+    },
+    {        
+        "grupo": "Grupo Teste C",
+        "placa": "fgr3211",
+        "status": "ON",
+        "dataHoraUltimaPosicao": "15/10/2000 21:10:03",
+        "categoria": "Medio",
+        "total": "VIVO"
+    }
+]

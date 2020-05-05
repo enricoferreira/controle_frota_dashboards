@@ -1,0 +1,12 @@
+export const tooltip = d3.select("body")
+    .append("div")
+    .style("position", "absolute")
+    .style("background", "white")
+    .style("opacity", ".8")
+    .style("padding", "8px")
+    .style("border","1px solid purple")
+    .style("z-index", "10")
+    .style("box-shadow", "3px 2px 14px -4px rgba(0,0,0,0.75)")
+    .style("font-size", "16px")
+    .style("border-radius", "3%")
+    .style("visibility", "hidden");

@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Semantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.2/dist/semantic.min.js"></script>
+ <!-- Bibliotecas js para manipulação de dados e gráficos -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+ <script type="text/javascript" src="./helper/crossfilterjs/js/crossfilter.js"></script>
+ <script type="text/javascript" src="./helper/crossfilterjs/js/dc.js"></script>    
+
+ <!-- Scripts para impressão -->
+ <script src="./helper/printjs/js/printjs.js"></script>
+ <link rel="stylesheet" href="./helper/printjs/css/printjs.css">
+
+ <!-- Moment.JS -->
+ <script type="text/javascript" src="./helper/momentJS/moment.js"></script>    
+
+
+ <script src="https://d3js.org/d3-time.v1.min.js"></script>
+<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // https://stackoverflow.com/questions/35451234/where-can-in-find-the-locale-objects-for-d3-js-for-different-countries
+        // https://github.com/d3/d3-time-format/blob/master/locale/fr-FR.json
+        var fr_FR = {
+            "dateTime": "%A, le %e %B %Y, %X",
+            "date": "%d/%m/%Y",
+            "time": "%H:%M:%S",
+            "periods": ["AM", "PM"],
+            "days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+            "shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+            "months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
+                "octobre", "novembre",
+                "décembre"
+            ],
+            "shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.",
+                "nov.", "déc."
+            ]
+        };
+        var frLocale = d3.locale(fr_FR);
+        data = [{
+                year: 2017,
+                month: 1,
+                value: 12
+            }, {
+                year: 2017,
+                month: 2,
+                value: 15
+            }, {
+                year: 2017,
+                month: 3,
+                value: 12
+            },
+            {
+                year: 2017,
+                month: 4,
+                value: 16
+            }, {
+                year: 2017,
+                month: 5,
+                value: 14
+            }
+        ]
+        var dateFormat_in = frLocale.timeFormat('%Y-%m-%d');
+        data.forEach(function (d) {
+            d["date"] = dateFormat_in.parse(d["year"] + "-" + d["month"] + "-01");
+            d["value"] = +d["value"];
+        });
+
+        //Create a Crossfilter instance
+        ndx = crossfilter(data);
+        monthDim = ndx.dimension(d => d3.time.month.utc(d["date"]));
+        minDate = new Date(monthDim.bottom(1)[0]["date"]);
+        minDate.setDate(15)
+        maxDate = new Date(monthDim.top(1)[0]["date"]);
+        maxDate.setDate(15)
+        timeChart = dc.barChart("#chart");
+        monthGroup = monthDim.group().reduceSum(d => d.value);
+        timeChart
+            .width(480)
+            .height(80)
+            .margins({
+                top: 5,
+                right: 30,
+                bottom: 20,
+                left: 50
+            })
+            .dimension(monthDim)
+            .group(monthGroup)
+            // .valueAccessor(d => d.value.amount)
+            .x(d3.time.scale().domain([minDate, maxDate]))
+            .xUnits(d3.time.months)
+            .elasticY(true)
+            .centerBar(true).xAxisPadding(15) //.xAxisPaddingUnit('month')
+            .gap(28);
+        timeChart.yAxis()
+            .ticks(1);
+        timeChart.xAxis()
+            .tickFormat(frLocale.timeFormat('%B'))
+            .ticks(d3.time.months);
+        dc.renderAll();
+    </script>
+</body>
+</html>

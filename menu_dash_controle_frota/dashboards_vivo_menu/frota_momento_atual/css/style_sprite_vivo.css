@@ -1,0 +1,841 @@
+@charset "UTF-8";
+/** COMPASS FRAMEWORK **/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.sprite-sprite, .sprite-alerta-lg-p, .sprite-alerta-p, .sprite-bloq-p, .sprite-book-p, .sprite-calendar-p, .sprite-car-p, .sprite-car-sm-p, .sprite-cercas-p, .sprite-change-p, .sprite-chart-p, .sprite-clear-p, .sprite-clock-p, .sprite-config-geral-p, .sprite-del-p, .sprite-devices-p, .sprite-disp-p, .sprite-edit-p, .sprite-group-green-p, .sprite-group-p, .sprite-group-red-p, .sprite-home-p, .sprite-left-p, .sprite-list-p, .sprite-location-p, .sprite-location-sm-p, .sprite-lock-p, .sprite-mail-p, .sprite-map-lg-p, .sprite-map-p, .sprite-mobile-p, .sprite-nick-p, .sprite-off-p, .sprite-ok-green-p, .sprite-ok-p, .sprite-phone-p, .sprite-play-p, .sprite-question-p, .sprite-relatorio-p, .sprite-right-p, .sprite-rota-p, .sprite-rss-p, .sprite-search-lg-p, .sprite-search-p, .sprite-settings-map-p, .sprite-settings-p, .sprite-trade-p, .sprite-truck-p-antigo, .sprite-truck-p, .sprite-upload-p, .sprite-user-p, .sprite-user-red-p, .sprite-wifi-p, .sprite-world-lg-p, .sprite-world-md-p, .sprite-world-p, .sprite-world-sm-p {
+  background-image: url('https://cache.1gps.com.br/system/master/layout-custom/27/img/sprite-s272b36af3b.png');
+  background-repeat: no-repeat;
+}
+
+.sprite-pdf-p{
+  background-image: url('https://cache.1gps.com.br/system/master/layout-custom/27/img/pdf-file-p.png') !important;
+  background-repeat: no-repeat !important;
+}
+
+.sprite-excel-p{
+  background-image: url('https://cache.1gps.com.br/system/master/layout-custom/27/img/excel-file-p.png') !important;
+  background-repeat: no-repeat !important;
+}
+
+.sprite-csv-p{
+  background-image: url('https://cache.1gps.com.br/system/master/layout-custom/27/img/csv-file-p.png') !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Configurando sprites */
+.sprite-pdf-p, .sprite-csv-p{
+  width: 17px !important;
+  height: 19.5px !important;
+}
+
+.sprite-excel-p{
+  width: 22px !important;
+  height: 19.5px !important;
+}
+
+.sprite-car-p, .sprite-trade-p {
+  width: 17px !important;
+  height: 12px !important;
+}
+
+.sprite-car-sm-p {
+  width: 17px !important;
+  height: 11px !important;
+}
+
+.sprite-config-geral-p {
+  width: 17px !important;
+  height: 14px !important;
+}
+
+.sprite-user-p, .sprite-user-red-p, .sprite-home-p, .sprite-world-p, .sprite-lock-p, .sprite-question-p,
+.sprite-change-p, .sprite-right-p, .sprite-clock-p, .sprite-disp-p, .sprite-rss-p,
+.sprite-cercas-p, .sprite-group-p, .sprite-devices-p, .sprite-search-p, .sprite-clear-p,
+.sprite-upload-p, .sprite-left-p, .sprite-book-p, .sprite-list-p, .sprite-chart-p,
+.sprite-off-p, .sprite-edit-p, .sprite-settings-p, .sprite-bloq-p, .sprite-group-red-p,
+.sprite-group-green-p {
+  width: 17px !important;
+  height: 17px !important;
+}
+.sprite-bloq-p{ 
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.sprite-alerta-lg-p, .sprite-map-lg-p {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.sprite-mail-p {
+  width: 16px !important;
+  height: 13px !important;
+  display: inline-block;
+}
+
+.sprite-phone-p {
+  width: 17px !important;
+  height: 15px !important;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.sprite-alerta-p {
+  width: 17px !important;
+  height: 18px !important;
+}
+
+.sprite-map-p {
+  width: 16px !important;
+  height: 18px !important;
+}
+
+.sprite-nick-p {
+  width: 17px !important;
+  height: 19px !important;
+}
+
+.sprite-search-lg-p {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/*INICIO Necessário para ocultador o icone anterior de location*/
+#fullscreen-lista-veiculos .location-icon,
+#fullscreen-lista-veiculos-mobile .location-icon,
+#fullscreen-lista-veiculos-mobile .location-icon::before,
+#fullscreen-lista-veiculos .location-icon::before {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+#fullscreen-lista-veiculos-mobile .location-icon::after,
+#fullscreen-lista-veiculos .location-icon::after {
+  border: none !important;
+}
+
+.sprite-location-p {
+  width: 17px !important;
+  height: 19px !important;
+  cursor: pointer;
+}
+
+.sprite-location-sm-p {
+  width: 17px !important;
+  height: 14px !important;
+}
+
+/*FIM Config location*/
+.sprite-wifi-p, .sprite-ok-p, .sprite-ok-green-p {
+  width: 17px !important;
+  height: 13px !important;
+}
+
+.sprite-relatorio-p {
+  width: 13px !important;
+  height: 17px !important;
+}
+
+.sprite-rota-p, .sprite-del-p {
+  width: 15px !important;
+  height: 17px !important;
+}
+
+.sprite-world-sm-p {
+  width: 10px !important;
+  height: 9px !important;
+}
+
+.sprite-world-md-p {
+  width: 13px !important;
+  height: 12px !important;
+}
+
+.sprite-world-lg-p {
+  width: 25px !important;
+  height: 24px !important;
+}
+
+/* Config settings dos mapas */
+.sprite-settings-map-p {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.sprite-calendar-p {
+  width: 18px !important;
+  height: 14px !important;
+}
+
+.sprite-truck-p {
+  width: 20px !important;
+  height: 14px !important;
+}
+
+.sprite-mobile-p {
+  width: 10px !important;
+  height: 16px !important;
+}
+
+.sprite-alerta-lg-p {
+  background-position: 0 0;
+}
+
+.sprite-alerta-p {
+  background-position: 0 -29px;
+}
+
+.sprite-bloq-p {
+  background-position: 0 -52px;
+}
+
+.sprite-book-p {
+  background-position: 0 -74px;
+}
+
+.sprite-calendar-p {
+  background-position: 0 -96px;
+}
+
+.sprite-car-p {
+  background-position: 0 -115px;
+}
+
+.sprite-car-sm-p {
+  background-position: 0 -132px;
+}
+
+.sprite-cercas-p {
+  background-position: 0 -148px;
+}
+
+.sprite-change-p {
+  background-position: 0 -170px;
+}
+
+.sprite-chart-p {
+  background-position: 0 -192px;
+}
+
+.sprite-clear-p {
+  background-position: 0 -214px;
+}
+
+.sprite-clock-p {
+  background-position: 0 -236px;
+}
+
+.sprite-config-geral-p {
+  background-position: 0 -258px;
+}
+
+.sprite-del-p {
+  background-position: 0 -277px;
+}
+
+.sprite-devices-p {
+  background-position: 0 -299px;
+}
+
+.sprite-disp-p {
+  background-position: 0 -321px;
+}
+
+.sprite-edit-p {
+  background-position: 0 -343px;
+}
+
+.sprite-group-green-p {
+  background-position: 0 -365px;
+}
+
+.sprite-group-p {
+  background-position: 0 -387px;
+}
+
+.sprite-group-red-p {
+  background-position: 0 -409px;
+}
+
+.sprite-home-p {
+  background-position: 0 -431px;
+}
+
+.sprite-left-p {
+  background-position: 0 -453px;
+}
+
+.sprite-list-p {
+  background-position: 0 -475px;
+}
+
+.sprite-location-p {
+  background-position: 0 -497px;
+}
+
+.sprite-location-sm-p {
+  background-position: 0 -521px;
+}
+
+.sprite-lock-p {
+  background-position: 0 -540px;
+}
+
+.sprite-mail-p {
+  background-position: 0 -562px;
+}
+
+.sprite-map-lg-p {
+  background-position: 0 -580px;
+}
+
+.sprite-map-p {
+  background-position: 0 -609px;
+}
+
+.sprite-mobile-p {
+  background-position: 0 -632px;
+}
+
+.sprite-nick-p {
+  background-position: 0 -653px;
+}
+
+.sprite-off-p {
+  background-position: 0 -677px;
+}
+
+.sprite-ok-green-p {
+  background-position: 0 -699px;
+}
+
+.sprite-ok-p {
+  background-position: 0 -717px;
+}
+
+.sprite-phone-p {
+  background-position: 0 -735px;
+}
+
+.sprite-play-p {
+  background-position: 0 -755px;
+}
+
+.sprite-question-p {
+  background-position: 0 -778px;
+}
+
+.sprite-relatorio-p {
+  background-position: 0 -800px;
+}
+
+.sprite-right-p {
+  background-position: 0 -822px;
+}
+
+.sprite-rota-p {
+  background-position: 0 -844px;
+}
+
+.sprite-rss-p {
+  background-position: 0 -866px;
+}
+
+.sprite-search-lg-p {
+  background-position: 0 -888px;
+}
+
+.sprite-search-p {
+  background-position: 0 -913px;
+}
+
+.sprite-settings-map-p {
+  background-position: 0 -935px;
+}
+
+.sprite-settings-p {
+  background-position: 0 -960px;
+}
+
+.sprite-trade-p {
+  background-position: 0 -982px;
+}
+
+.sprite-truck-p-antigo {
+  background-position: 0 -999px;
+}
+
+.sprite-truck-p {
+  background-position: 0 -1020px;
+}
+
+.sprite-upload-p {
+  background-position: 0 -1039px;
+}
+
+.sprite-user-p {
+  background-position: 0 -1061px;
+}
+
+.sprite-user-red-p {
+  background-position: 0 -1083px;
+}
+
+.sprite-wifi-p {
+  background-position: 0 -1105px;
+}
+
+.sprite-world-lg-p {
+  background-position: 0 -1123px;
+}
+
+.sprite-world-md-p {
+  background-position: 0 -1152px;
+}
+
+.sprite-world-p {
+  background-position: 0 -1169px;
+}
+
+.sprite-world-sm-p {
+  background-position: 0 -1191px;
+}
+
+/* Aqui contem todas as variáveis necessárias.. */
+/* CORES PRIMARIAS */
+/* CORES SECUNDARIAS */
+/* MINI PALHETA DE CORES Sintax cor[HEX sem #] $cor-c5c5c5 */
+/* FONTS */
+/** MENU **/
+/* FONT DOS MENUS */
+/* CORES MENU HOVER */
+/* BACKGROUND */
+/* BACKGROUND HOVER */
+/* FONTES */
+#sidebar-search #sidebar-menu-btn:hover, #navbar-in-container #sidebar-menu-btn:hover, #user-options .btn-show-all, #navbar-in-container .btn-show-all {
+  background: #660099 !important;
+}
+
+.sprite-car-p, .sprite-trade-p, .sprite-car-sm-p, .sprite-config-geral-p, .sprite-user-p, .sprite-user-red-p, .sprite-home-p, .sprite-world-p, .sprite-lock-p, .sprite-question-p,
+.sprite-change-p, .sprite-right-p, .sprite-clock-p, .sprite-disp-p, .sprite-rss-p,
+.sprite-cercas-p, .sprite-group-p, .sprite-devices-p, .sprite-search-p, .sprite-clear-p,
+.sprite-upload-p, .sprite-left-p, .sprite-book-p, .sprite-list-p, .sprite-chart-p,
+.sprite-off-p, .sprite-edit-p, .sprite-settings-p, .sprite-bloq-p, .sprite-group-red-p,
+.sprite-group-green-p, .sprite-mail-p, .sprite-phone-p, .sprite-alerta-p, .sprite-map-p, .sprite-nick-p, .sprite-search-lg-p, .sprite-location-p, .sprite-location-sm-p, .sprite-wifi-p, .sprite-ok-p, .sprite-ok-green-p, .sprite-relatorio-p, .sprite-rota-p, .sprite-del-p, .sprite-world-sm-p, .sprite-world-md-p, .sprite-world-lg-p, .sprite-settings-map-p, .sprite-calendar-p, .sprite-truck-p, .sprite-mobile-p {
+  vertical-align: middle !important;
+}
+
+html, body, .font-p, .ui.menu, .ui.input input, .ui.accordion .title:not(.ui), .ui.header, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=file], .ui.form input[type=url], .ui.form input[type=number], .ui.button, .btn-p, #divmenu .btn, #divmenu .button, .ui.inverted.green.button,
+.ui.inverted.green.buttons .button, .btn-success,
+.btn-primary, .btn-success.active,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover,
+.open > .dropdown-toggle.btn-success {
+  font-family: "Roboto", sans-serif !important;
+}
+
+/** LAYOUT GLOBAL **/
+.alert-success {
+  color: inherit !important;
+  background-color: #b9d25a !important;
+  border-color: #b9d25a !important;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* POSITION */
+/* Fixando #menu-in */
+.p-sticky{
+  position: sticky;
+  top: 0;
+}
+
+
+/* Font Vivo  APENAS PARA OS BOTOES*/
+@font-face {
+  font-family: "ITCOfficinaSerifBookRegular";
+  src: local("OfficinaSerifOSITCTTBook") url("http://cache.1gps.com.br/system/master/font/OfficinaSerifOSITCTTBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* FONTS DOS BOTÕES */
+.ui.button {
+  font-weight: normal;
+}
+
+/* CORES VIVO */
+.c-primaria {
+  color: #660099 !important;
+}
+
+.c-aux-p-2 {
+  color: #7850a0 !important;
+}
+
+.c-aux-p-3 {
+  color: #a078b4 !important;
+}
+
+.c-secundaria {
+  color: #fff !important;
+}
+
+.c-s-2 {
+  color: #ff9900 !important;
+}
+
+.c-s-3 {
+  color: #0066cc !important;
+}
+
+.c-s-4 {
+  color: #99cc33 !important;
+}
+
+.c-s-5 {
+  color: #eb3c7d !important;
+}
+
+/* BOTOES */
+.btn-p {
+  background: #660099 !important;
+  color: #fff !important;
+  font-weight: normal;
+}
+
+.btn-p:hover {
+  color: #ff9900 !important;
+}
+
+.btn {
+  background: #660099 !important;
+  color: #fff !important;
+  font-weight: normal;
+}
+
+/* Estilizando botões */
+body .ui.basic.button{
+  background: #660099 !important;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+
+#divmenu .btn {
+  background: #660099 !important;
+  color: #fff !important;
+  font-weight: normal;
+}
+#divmenu .button {
+  background: #660099 !important;
+  color: #fff !important;
+  font-weight: normal;
+}
+.turn-180{
+  transform: rotate(180deg);
+}
+.ui.grid .campo-obrigatorio{
+  color: #660099 !important;
+}
+
+.campo-obrigatorio{
+  color: #660099 !important;
+}
+
+table .obrigatorio.campo-obrigatorio{
+  color: #660099 !important;
+}
+
+div.ui.compact.menu a i.icon.c-secundaria{
+  color: white !important;
+}
+
+/* div.ui.compact.menu a.item{
+  border-left:1px solid white !important;
+} */
+
+/*SOBRESCREVENDO O SEMANTIC*/
+.ui.inverted.green.button,
+.ui.inverted.green.buttons .button {
+  -moz-box-shadow: 0 0 0 2px #660099 inset !important;
+  -webkit-box-shadow: 0 0 0 2px #660099 inset !important;
+  box-shadow: 0 0 0 2px #660099 inset !important;
+  color: #660099 !important;
+  font-weight: normal;
+}
+
+.ui.inverted.green.button:hover,
+.ui.inverted.green.buttons .button:hover {
+  background-color: #660099 !important;
+  color: #fff !important;
+}
+
+/* SOBRESCREVENDO O BOOTSTRAP, É eu sei.. ¯\_(ツ)_/¯ kk */
+.btn-success,
+.btn-primary {
+  background: #660099 !important;
+  color: #fff !important;
+  border-color: #660099 !important;
+  font-weight: normal;
+}
+
+.style-button .btn{
+  background: #660099 !important;
+    color: #fff !important;
+    font-weight: normal;
+}
+
+.btn-success.active,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover,
+.open > .dropdown-toggle.btn-success {
+  background: #660099 !important;
+  color: #fff !important;
+  border-color: #660099 !important;
+  font-weight: normal;
+}
+
+/* DISPLAYS VIVO */
+.d-none-p {
+  display: none !important;
+}
+
+#menu-container-search #searchmenu:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.hover-item-green:hover {
+  background: rgba(213, 213, 213, 0.68) !important;
+  color: #fff !important;
+}
+
+/*remove os icones do semantic (para incluir uma imagem com esse mesmo seletor)*/
+.r-icon {
+  display: inline-block !important;
+  margin-right: 5px;
+}
+
+.r-icon:before {
+  content: '' !important;
+}
+
+.relatorioGerencialSave .sprite-edit-p {
+  margin-right: 5px;
+}
+
+.UserClientsDataList .sprite-edit-p {
+  margin: 10px;
+}
+
+#right-menu .links-popup, #user-options .links-popup {
+  width: 170px !important;
+}
+
+.icon.pdf,
+.icon.excel,
+.icon.html5 {
+  color: #660099 !important;
+}
+
+/** LAYOUT GLOBAL **/
+/* MENU DE NAVEGAÇÃO */
+.menu-item-p {
+  font-size: 16px !important;
+}
+
+.menu-item-p:hover {
+  color: #666 !important;
+}
+
+.submenu-item-p {
+  font-size: 14px !important;
+}
+
+.submenu-item-p:hover {
+  background: #d5d5d5 !important;
+}
+
+.fundo-menu-p {
+  background: #eaeaea !important;
+}
+
+.fundo-submenu-p:hover {
+  background: #c5c5c5 !important;
+}
+
+.selected-click-p {
+  color: #666 !important;
+}
+
+#sidebar-search .hover-item-green:hover {
+  background: rgba(213, 213, 213, 0.68) !important;
+}
+
+#navbar-in-container .icon_search {
+  opacity: 1;
+}
+
+#search_input.in {
+  padding-left: 2rem !important;
+}
+
+#search_input {
+  padding-left: 2rem !important;
+}
+
+#icon_search {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+#user-options .links-popup .item:hover {
+  background: rgba(213, 213, 213, 0.68) !important;
+}
+#user-options .user-container .item:hover {
+  background: rgba(213, 213, 213, 0.68) !important;
+}
+#user-options .btn-show-all:hover {
+  color: #ff9900 !important;
+}
+
+#navbar-in-container .btn-show-all:hover {
+  color: #ff9900 !important;
+}
+
+/** LAYOUT FULLSCREEN **/
+#btn-suporte:hover {
+  background: #660099 !important;
+}
+#btn-suporte:hover .img-icon-suporte {
+  background-image: url(https://cache.1gps.com.br/system/master/layout-custom/27/img/callcenter-white.png) !important;
+}
+#btn-suporte .img-icon-suporte {
+  top: -7px;
+  left: -5px;
+  background-image: url(https://cache.1gps.com.br/system/master/layout-custom/27/img/callcenter.png) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-sup-text-tel,
+.btn-sup-text-mail {
+  display: inline-block;
+}
+
+.sprite-phone-p, .btn-sup-text-tel,
+.sprite-mail-p, .btn-sup-text-mail {
+  margin-bottom: 5px;
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  color: #660099 !important;
+}
+
+.floating-options-content .sprite-map-lg-p {
+  display: block !important;
+}
+.floating-options-content .sprite-alerta-lg-p {
+  display: block !important;
+}
+
+#menu-container-search .search-content .sprite-search-p {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.estilo-grid-tabela .title-empresa,
+.estilo-grid-tabela .placa-veiculo {
+  color: inherit !important;
+}
+
+.ui.toggle.checkbox input:checked ~ .box:before, .ui.toggle.checkbox input:checked ~ label:before {
+  background-color: #b9d25a !important;
+}
+
+.divMainTable .centralizar-mapa a {
+  color: inherit !important;
+}
+
+#relatorios-grid .list a {
+  color: #660099 !important;
+}
+
+#fullscreen-lista-veiculos .btn-ver-all {
+  color: #660099 !important;
+  box-shadow: 0 0 0 2px #660099 inset !important;
+}
+#fullscreen-lista-veiculos .btn-ver-all:hover {
+  background: #660099 !important;
+  color: #fff !important;
+}
+
+#fullscreen-lista-veiculos-mobile .button {
+  background: #660099 !important;
+}
+#fullscreen-lista-veiculos-mobile .sprite-location-p {
+  position: absolute;
+  left: 48px;
+  bottom: 9px;
+}
+
+#divMainTable .button:not(.btn-zoom) {
+  background: #660099 !important;
+}
+#divMainTable .header {
+  color: #660099 !important;
+  border-bottom: 1px solid #660099 !important;
+}
+#divMainTable .nome-title,
+#divMainTable .dist-title {
+  color: #660099 !important;
+}
+
+#position-grid .btn {
+  background: #660099 !important;
+  border-color: #660099 !important;
+}
+
+.mobile .user-profile {
+  background: rgba(255, 255, 255, 0.43137);
+}
+
+/** LAYOUT FORM **/
+/** LAYOUT LIST **/
+.modalNew .button {
+  background: #660099 !important;
+  color: white !important;
+}
+
+.d-block-novo{
+  display: block !important;
+}
+
+.ui.secondary.pointing.menu.mytab_ul .active.item{
+  border-color: #660099 !important;
+}
+
+.m-10-p{
+  margin: 10px !important;
+}
+
+#divMainTable .titleActiveSideBar .ui.header{
+  color: #660099 !important;
+  border: none !important;
+}
+
+table .ui.mini.item.menu a{
+  padding-left: .5rem !important;
+  padding-right: .5rem !important;
+}
+
+table .ui.mini.item.menu{
+  display: flex !important;
+  align-items: center !important;
+}

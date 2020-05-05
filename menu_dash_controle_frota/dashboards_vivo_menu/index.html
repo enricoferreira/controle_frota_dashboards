@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frota Momento Atual</title>
+
+   <!-- Semantic -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.2/dist/semantic.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.2/dist/semantic.min.js"></script>
+
+   <!-- Estilos para os gráficos -->   
+   <link rel="stylesheet" type="text/css" href="./helper/crossfilterjs/css/dc.css" />
+
+    <!-- Estilo para a página -->
+    <link rel="stylesheet" type="text/css" href="./frota_momento_atual/css/style.css" />
+    <link rel="stylesheet" href="./frota_momento_atual/css/frotaMomentoAtual_style.css">
+    <link rel="stylesheet" href="./frota_momento_atual/css/style_sprite_vivo.css">
+    <link rel="stylesheet" type="text/css" href="./frota_momento_atual/css/font_face.css" />
+
+   <!-- Bibliotecas js para manipulação de dados e gráficos -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+   <script type="text/javascript" src="./helper/crossfilterjs/js/crossfilter.js"></script>
+   <script type="text/javascript" src="./helper/crossfilterjs/js/dc.js"></script>    
+
+  <!-- Scripts para impressão -->
+  <script src="./helper/printjs/js/printjs.js"></script>
+  <link rel="stylesheet" href="./helper/printjs/css/printjs.css">
+
+</head>
+
+<body>    
+    <div class="ui container  mt-10" id="page">
+        <div class="ui grid mb-50">                        
+            <div class="sixteen wide computer column">
+                <div class="ui one cards">
+                    <div class="ui card">
+                        <div class="content">
+                            <h1 class="ui header">
+                                FROTA MOMENTO ATUAL
+                            </h1>
+                        </div>
+                        <div class="content">
+                            <div class="ui grid internally celled three column stackable">                                
+                                <div class="column">                                        
+                                        <div class="ui sub header">ON</div>
+                                        <div data-chart-select="ON" id="chart-pie-on"></div>                                    
+                                </div>
+                                <div class="column">
+                                    <div class="ui sub header">OFF</div>
+                                    <div data-chart-select="OFF" id="chart-pie-off"></div>
+                                </div>
+                                <div class="column">
+                                    <div class="ui sub header">TOTAL</div>
+                                    <div id="chart-pie-total"></div>
+                                </div>
+                            </div>                            
+                        </div>                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="sixteen wide computer column">
+                <div class="ui three cards stackable">
+                    <div class="ui card leve">
+                        <div class="content">
+                            <h1 class="ui header">
+                                LEVE
+                            </h1>
+                        </div>
+                        <div class="content">
+                            <div id="number-leve"></div>
+                        </div>
+                    </div>
+                    <div class="ui card medio">
+                        <div class="content">
+                            <h1 class="ui header">
+                                MÉDIO
+                            </h1>
+                        </div>
+                        <div class="content">
+                            <div id="number-medio"></div>
+                        </div>
+                    </div>
+                    <div class="ui card pesado">
+                        <div class="content">
+                            <h1 class="ui header">
+                                PESADO
+                            </h1>
+                        </div>
+                        <div class="content">
+                            <div id="number-pesado"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixteen wide computer column">
+                <div class="ui two cards stackable">
+                    <div class="ui card">
+                        <div class="content">
+                            <h1 class="ui header d-block">VEÍCULOS <span data-title>ON</span> POR GRUPO</h1>
+                        </div>
+                        <div class="content">
+                            <div id="chart-pie">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div id="year-legend" class="dc-html-legend-container"></div>
+                        </div>
+                    </div>
+                    <div class="ui card">
+                        <div class="content">
+                            <h1 class="ui header">RELAÇÃO DE PLACAS - <span data-title>ON</span></h1>
+                        </div>
+                        <div class="content">
+                            <div class="table-container">
+                                <table class="ui table striped celled" id="table"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+    <!-- Geração e leitura de dados -->     
+    <script type="module" src="./frota_momento_atual/js/gerarGraficos.js"></script>
+    <!-- <script type="module" src="./frota_momento_atual/js/selection.js"></script>     -->
+</body>
+
+</html>

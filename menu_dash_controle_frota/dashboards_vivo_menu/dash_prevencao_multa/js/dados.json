@@ -1,0 +1,102 @@
+[
+    {
+    "tipoVia": "Urbano",
+    "evento": "Seco",
+    "grupo": "C",
+    "categoria": "leve",
+    "placa": "fgr1646",
+    "dataLeitura": "2014-02-20",
+    "kmRodado": 13030,
+    "infracoes": 41
+    },
+    {
+    "tipoVia": "Urbano",
+    "evento": "Seco",
+    "grupo": "A",
+    "categoria": "leve",
+    "placa": "fgr0901",
+    "dataLeitura": "2014-02-21",
+    "kmRodado": 18030,
+    "infracoes": 28
+    },
+    {
+    "tipoVia": "Urbano",
+    "evento": "Seco",
+    "grupo": "A",
+    "categoria": "leve",
+    "placa": "fgr9899",
+    "dataLeitura": "2014-02-22",
+    "kmRodado": 11130,
+    "infracoes": 12
+    },
+    {
+    "tipoVia": "Urbano",
+    "evento": "Seco",
+    "grupo": "C",
+    "categoria": "leve",
+    "placa": "fgr1114",
+    "dataLeitura": "2014-02-22",
+    "kmRodado": 1020,
+    "infracoes": 49
+    },
+    {
+    "tipoVia": "Urbano",
+    "evento": "Seco",
+    "grupo": "C",
+    "categoria": "medio",
+    "placa": "fgr1112",
+    "dataLeitura": "2014-02-23",
+    "kmRodado": 14430,
+    "infracoes": 98
+    },
+    {
+    "tipoVia": "Urbano",
+    "evento": "Chuva",
+    "grupo": "C",
+    "categoria": "pesado",
+    "placa": "fgr1113",
+    "dataLeitura": "2014-02-24",
+    "kmRodado": 22230,
+    "infracoes": 88
+    },
+    {
+    "tipoVia": "Rodoviario",
+    "evento": "Seco",
+    "grupo": "B",
+    "categoria": "pesado",
+    "placa": "fgr3211",
+    "dataLeitura": "2014-02-24",
+    "kmRodado": 19990,
+    "infracoes": 31
+    },
+    {
+    "tipoVia": "Rodoviario",
+    "evento": "Seco",
+    "grupo": "A",
+    "categoria": "medio",
+    "placa": "fgr0900",
+    "dataLeitura": "2014-03-24",
+    "kmRodado": 8000,
+    "infracoes": 72
+    },
+    {
+    "tipoVia": "Urbano",
+    "evento": "Chuva",
+    "grupo": "B",
+    "categoria": "leve",
+    "placa": "fgr1234",
+    "dataLeitura": "2014-04-25",
+    "kmRodado": 25030,
+    "infracoes": 59
+    },
+    {
+    "tipoVia": "Rodoviario",
+    "evento": "Chuva",
+    "grupo": "B",
+    "categoria": "medio",
+    "placa": "fgr3211",
+    "dataLeitura": "2014-04-26",
+    "kmRodado": 9030,
+    "infracoes": 67
+    }
+    ]

@@ -1,0 +1,82 @@
+[
+    {
+    "tipoVia": "Urbano",
+    "grupo": "C",
+    "categoria": "leve",
+    "placa": "fgr1646",
+    "dataLeitura": "2014-02-20",
+    "kmRodado": 13030
+    },
+    {
+    "tipoVia": "Urbano",
+    "grupo": "A",
+    "categoria": "leve",
+    "placa": "fgr0901",
+    "dataLeitura": "2014-02-21",
+    "kmRodado": 18030
+    },
+    {
+    "tipoVia": "Urbano",
+    "grupo": "A",
+    "categoria": "leve",
+    "placa": "fgr9899",
+    "dataLeitura": "2014-02-22",
+    "kmRodado": 11130
+    },
+    {
+    "tipoVia": "Urbano",
+    "grupo": "C",
+    "categoria": "leve",
+    "placa": "fgr1113",
+    "dataLeitura": "2014-02-22",
+    "kmRodado": 1020
+    },
+    {
+    "tipoVia": "Urbano",
+    "grupo": "C",
+    "categoria": "medio",
+    "placa": "fgr1112",
+    "dataLeitura": "2014-02-23",
+    "kmRodado": 14430
+    },
+    {
+    "tipoVia": "Urbano",
+    "grupo": "C",
+    "categoria": "pesado",
+    "placa": "fgr1111",
+    "dataLeitura": "2014-02-24",
+    "kmRodado": 22230
+    },
+    {
+    "tipoVia": "Rodoviario",
+    "grupo": "B",
+    "categoria": "pesado",
+    "placa": "fgr3211",
+    "dataLeitura": "2014-02-24",
+    "kmRodado": 19990
+    },
+    {
+    "tipoVia": "Rodoviario",
+    "grupo": "A",
+    "categoria": "medio",
+    "placa": "fgr0900",
+    "dataLeitura": "2014-03-24",
+    "kmRodado": 8000
+    },
+    {
+    "tipoVia": "Urbano",
+    "grupo": "B",
+    "categoria": "leve",
+    "placa": "fgr1234",
+    "dataLeitura": "2014-04-25",
+    "kmRodado": 25030
+    },
+    {
+    "tipoVia": "Rodoviario",
+    "grupo": "B",
+    "categoria": "medio",
+    "placa": "fgr3211",
+    "dataLeitura": "2014-04-26",
+    "kmRodado": 9030
+    }
+    ]

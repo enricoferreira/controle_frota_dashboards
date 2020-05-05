@@ -1,0 +1,72 @@
+[
+    {
+    "status": "Ativo",
+    "grupo": "C",
+    "categoria": "leve",
+    "placa": "fgr1646",
+    "dataRetiradaAtivacao": "2014-02-20"
+    },
+    {
+    "status": "Retirado",
+    "grupo": "A",
+    "categoria": "leve",
+    "placa": "fgr0901",
+    "dataRetiradaAtivacao": "2014-02-21"
+    },
+    {
+    "status": "Retirado",
+    "grupo": "A",
+    "categoria": "leve",
+    "placa": "fgr9899",
+    "dataRetiradaAtivacao": "2014-02-22"
+    },
+    {
+    "status": "Ativo",
+    "grupo": "C",
+    "categoria": "leve",
+    "placa": "fgr1112",
+    "dataRetiradaAtivacao": "2014-02-22"
+    },
+    {
+    "status": "Ativo",
+    "grupo": "C",
+    "categoria": "medio",
+    "placa": "fgr1123",
+    "dataRetiradaAtivacao": "2014-02-23"
+    },
+    {
+    "status": "Ativo",
+    "grupo": "C",
+    "categoria": "pesado",
+    "placa": "fgr1113",
+    "dataRetiradaAtivacao": "2014-02-24"
+    },
+    {
+    "status": "Retirado",
+    "grupo": "B",
+    "categoria": "pesado",
+    "placa": "fgr3311",
+    "dataRetiradaAtivacao": "2014-02-24"
+    },
+    {
+    "status": "Ativo",
+    "grupo": "A",
+    "categoria": "medio",
+    "placa": "fgr0900",
+    "dataRetiradaAtivacao": "2014-02-24"
+    },
+    {
+    "status": "Ativo",
+    "grupo": "B",
+    "categoria": "leve",
+    "placa": "fgr1234",
+    "dataRetiradaAtivacao": "2014-02-25"
+    },
+    {
+    "status": "Retirado",
+    "grupo": "B",
+    "categoria": "medio",
+    "placa": "fgr3211",
+    "dataRetiradaAtivacao": "2014-02-26"
+    }
+    ]

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "ITCOfficinaSerifBookRegular";
+    src: url('../../OfficinaSerifOSITCTTBook.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*:not(i){
+    font-family: "ITCOfficinaSerifBookRegular" !important;
+}
