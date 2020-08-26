@@ -1,6 +1,6 @@
 # controle_frota_dashboards
 
-Dashboard desenvolvido utilizando JavaScript Puro e as libs gráficas: crossfilter.js, d3.js e dc.js. Támbem utilizo Semantic Ui para facilitar na montagem do layout e estrutura CSS.
+Dashboard desenvolvido utilizando JavaScript Puro e as libs gráficas: crossfilter.js, d3.js e dc.js. Támbem utilizo Semantic Ui para construção do layout e estrutura CSS.
 
 # Instalação
 1- Va até a pasta onde se encontra o arquivo package.json
